@@ -1,0 +1,14 @@
+appId: app.kashif.situp
+copyright: 'Copyright © 2018 QuickDip'
+productName: SitUp
+artifactName: '${productName}-${os}-${arch}-${version}.${ext}'
+files:
+  - 'build/**/*'
+  - 'node_modules/**/*'
+extraMetadata:
+  main: 'build/electron.js'
+mac:
+  category: public.app-category.reference
+  identity: null
+  target:
+    - zip
