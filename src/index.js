@@ -16,8 +16,8 @@ class Menu extends React.Component {
 const App = () => {
     return (
         <div className="bg-gray-900 text-white mx-auto max-w-sm rounded-lg overflow-hidden">
-            <div className="sm:flex sm:items-center px-6 py-4">
-                <div className="text-center sm:text-left sm:flex-grow">
+            <div className="flex items-center px-6 py-4">
+                <div className="text-center text-left flex-grow">
                     <div className="mb-4">
                         <p className="text-xl leading-tight">Kashif</p>
                         <p className="text-sm leading-tight text-grey-dark">

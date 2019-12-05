@@ -7,14 +7,20 @@ let uiWindow = null
 
 const WIDTH = 300
 const HEIGHT = 350
+
+
+
 const URL = isDev
     ? 'http://localhost:8080'
     : `file://${path.join(__dirname, '../build/index.html')}`
 
 app.dock.hide()
 
+app.setLoginItemSettings({ openAtLogin: true }) //@Todo user configurable?
+
 const createTray = () => {
     tray = new Tray('/Users/kashif/Projects/situp/assets/tray-icon.png') //@Todo cleanup hardcoded assets path
+
     tray.setIgnoreDoubleClickEvents(true)
     tray.on('right-click', toggleWindow)
     tray.on('click', ev => {
